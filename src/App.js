@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import VendingMachine from './components/VendingMachine';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='wrapper'>
+        <div>
+          <div className='description'>
+            <h1>Vending machine</h1>
+            <div>
+              <p>Your snack is just three steps away</p>
+              <p>1. Choose a snack and note its ID number.</p>
+              <p>2. Insert the coins.</p>
+              <p>3. Click 'Order'.</p>
+              <p>Enjoy your snack and don't forget collect your change!</p>
+            </div>
+          </div>
+        </div>
+        <VendingMachine />
+      </div>
     </div>
   );
 }
